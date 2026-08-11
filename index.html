@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>應用地文性淹排水模式提升鹽田濕地之棲地品質—以七股鹽田濕地為例 | 雙欄論證批註</title>
+<title>應用地文性淹排水模式提升鹽田濕地之棲地品質—以七股鹽田濕地為例 | 雙語全文</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
@@ -13,792 +13,335 @@
     --navy-light: #163a5f;
     --paper: #faf8f5;
     --beige: #f0ece2;
-    --yellow: #f5d76e;
-    --yellow-bg: rgba(245, 215, 110, 0.35);
-    --red: #e74c3c;
-    --red-bg: rgba(231, 76, 60, 0.18);
-    --blue: #3498db;
-    --blue-bg: rgba(52, 152, 219, 0.18);
-    --green: #27ae60;
-    --green-bg: rgba(39, 174, 96, 0.18);
-    --purple: #9b59b6;
-    --purple-bg: rgba(155, 89, 182, 0.18);
     --text: #1a1a1a;
     --muted: #5a5a5a;
     --border: #d9d3c7;
   }
-
   * { box-sizing: border-box; margin: 0; padding: 0; }
-
   body {
     font-family: 'IBM Plex Sans', system-ui, sans-serif;
     background: #e8e4dc;
     color: var(--text);
-    line-height: 1.65;
+    line-height: 1.7;
   }
-
-  /* ========== TOP NAV ========== */
   .top-nav {
     background: var(--navy);
     color: #fff;
-    padding: 0.9rem 1.5rem;
+    padding: 1rem 1.5rem;
     position: sticky;
     top: 0;
     z-index: 100;
     box-shadow: 0 2px 12px rgba(0,0,0,0.25);
   }
-  .top-nav-inner {
-    max-width: 1480px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1rem 2rem;
-    justify-content: space-between;
-  }
+  .top-nav-inner { max-width: 1100px; margin: 0 auto; }
   .top-title {
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     font-weight: 600;
     letter-spacing: 0.02em;
-    max-width: 720px;
     line-height: 1.4;
   }
   .top-title span {
     display: block;
-    font-size: 0.78rem;
+    font-size: 0.82rem;
     font-weight: 400;
-    opacity: 0.75;
-    margin-top: 0.2rem;
+    opacity: 0.78;
+    margin-top: 0.25rem;
   }
-  .legend {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.55rem 1rem;
-    font-size: 0.78rem;
-  }
-  .legend-item {
-    display: flex;
-    align-items: center;
-    gap: 0.35rem;
-  }
-  .swatch {
-    width: 14px;
-    height: 14px;
-    border-radius: 3px;
-    flex-shrink: 0;
-  }
-  .swatch.yellow { background: var(--yellow); }
-  .swatch.red { background: var(--red); }
-  .swatch.blue { background: var(--blue); }
-  .swatch.green { background: var(--green); }
-  .swatch.purple { background: var(--purple); }
-
-  /* ========== CHAPTER NAV ========== */
   .chapter-nav {
     background: var(--navy-light);
     position: sticky;
-    top: 68px;
+    top: 72px;
     z-index: 90;
     border-bottom: 1px solid rgba(255,255,255,0.12);
   }
   .chapter-nav-inner {
-    max-width: 1480px;
+    max-width: 1100px;
     margin: 0 auto;
     display: flex;
     overflow-x: auto;
-    gap: 0.15rem;
-    padding: 0.45rem 1rem;
+    gap: 0.2rem;
+    padding: 0.5rem 1rem;
     scrollbar-width: thin;
   }
   .chapter-nav a {
-    color: rgba(255,255,255,0.78);
+    color: rgba(255,255,255,0.8);
     text-decoration: none;
-    font-size: 0.8rem;
-    padding: 0.4rem 0.85rem;
+    font-size: 0.82rem;
+    padding: 0.4rem 0.9rem;
     border-radius: 4px;
     white-space: nowrap;
     transition: all 0.15s;
   }
   .chapter-nav a:hover {
-    background: rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.14);
     color: #fff;
   }
-
-  /* ========== MAIN LAYOUT ========== */
   .container {
-    max-width: 1480px;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 1.5rem 1.2rem 4rem;
+    padding: 1.8rem 1.2rem 4rem;
   }
-
+  .meta-info {
+    font-size: 0.88rem;
+    color: var(--muted);
+    margin-bottom: 1.8rem;
+    padding: 0.85rem 1.1rem;
+    background: #f5f2eb;
+    border-radius: 6px;
+    border-left: 3px solid var(--navy);
+  }
   .section-header {
     background: var(--navy);
     color: #fff;
-    padding: 0.85rem 1.3rem;
-    margin: 2.2rem 0 1.1rem;
+    padding: 0.9rem 1.4rem;
+    margin: 2.4rem 0 1.3rem;
     border-radius: 6px;
-    font-size: 1.05rem;
+    font-size: 1.08rem;
     font-weight: 600;
     letter-spacing: 0.03em;
   }
-  .section-header:first-of-type { margin-top: 0.5rem; }
-
+  .section-header:first-of-type { margin-top: 0.3rem; }
   .para-block {
-    display: grid;
-    grid-template-columns: 1fr 340px;
-    gap: 1.4rem;
-    margin-bottom: 2rem;
-    align-items: start;
-  }
-
-  /* Left column */
-  .left-col {
     background: var(--paper);
     border-radius: 8px;
-    padding: 1.35rem 1.5rem 1.5rem;
+    padding: 1.4rem 1.6rem 1.5rem;
+    margin-bottom: 1.6rem;
     box-shadow: 0 1px 4px rgba(0,0,0,0.06);
     border: 1px solid var(--border);
   }
-
   .en-text {
     font-family: 'Lora', Georgia, serif;
-    font-size: 0.97rem;
-    line-height: 1.75;
+    font-size: 0.98rem;
+    line-height: 1.8;
     color: #1c1c1c;
   }
-
   .zh-text {
-    margin-top: 1rem;
-    padding: 0.95rem 1.1rem 0.95rem 1.15rem;
+    margin-top: 1.1rem;
+    padding: 1rem 1.15rem 1rem 1.2rem;
     background: var(--beige);
     border-left: 3px solid #c4b8a0;
     border-radius: 0 5px 5px 0;
-    font-size: 0.92rem;
-    line-height: 1.75;
+    font-size: 0.95rem;
+    line-height: 1.8;
     color: #2a2a2a;
   }
-
   .divider {
     height: 1px;
     background: var(--border);
-    margin: 1rem 0 0;
+    margin: 1.1rem 0 0;
   }
-
-  /* Highlights */
-  mark.yellow { background: var(--yellow-bg); color: inherit; padding: 0.05em 0.15em; border-radius: 2px; }
-  mark.red { background: var(--red-bg); color: inherit; padding: 0.05em 0.15em; border-radius: 2px; }
-  mark.blue { background: var(--blue-bg); color: inherit; padding: 0.05em 0.15em; border-radius: 2px; }
-  mark.green { background: var(--green-bg); color: inherit; padding: 0.05em 0.15em; border-radius: 2px; }
-  mark.purple { background: var(--purple-bg); color: inherit; padding: 0.05em 0.15em; border-radius: 2px; }
-
-  /* Right column - annotation */
-  .anno-card {
-    background: #fff;
-    border-radius: 8px;
-    padding: 1.1rem 1.2rem;
-    border-left: 4px solid var(--navy);
-    box-shadow: 0 1px 5px rgba(0,0,0,0.07);
-    font-size: 0.86rem;
-    line-height: 1.65;
-  }
-  .anno-card h4 {
-    font-size: 0.78rem;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
+  .keyword {
+    display: inline-block;
+    background: #e8f0f7;
     color: var(--navy);
-    margin-bottom: 0.55rem;
-    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 0.15rem 0.55rem;
+    border-radius: 3px;
+    margin: 0.15rem 0.2rem 0.15rem 0;
   }
-  .anno-label {
-    font-weight: 600;
-    color: var(--navy-light);
-    font-size: 0.8rem;
-    margin-top: 0.7rem;
-    margin-bottom: 0.2rem;
-  }
-  .anno-label:first-of-type { margin-top: 0; }
-  .anno-card p { color: #333; }
-
-  /* Bottom overview */
-  .overview {
-    background: var(--paper);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 1.8rem 2rem;
-    margin-top: 3rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  }
-  .overview h2 {
-    font-size: 1.25rem;
-    color: var(--navy);
-    margin-bottom: 1.3rem;
-    padding-bottom: 0.6rem;
-    border-bottom: 2px solid var(--navy);
-  }
-  .overview h3 {
-    font-size: 0.95rem;
-    color: var(--navy-light);
-    margin: 1.4rem 0 0.5rem;
-  }
-  .skeleton {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-    align-items: center;
-    font-size: 0.9rem;
-    margin: 0.8rem 0 1.2rem;
-  }
-  .skel-box {
-    background: var(--navy);
-    color: #fff;
-    padding: 0.4rem 0.85rem;
-    border-radius: 4px;
-    font-weight: 500;
-  }
-  .skel-arrow { color: var(--navy); font-weight: 700; }
-  .claim-box {
-    background: var(--yellow-bg);
-    border-left: 4px solid var(--yellow);
-    padding: 0.9rem 1.15rem;
-    border-radius: 0 6px 6px 0;
-    font-size: 0.95rem;
-    margin: 0.6rem 0 1.2rem;
-  }
-  .strong-weak {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.2rem;
-    margin-top: 0.6rem;
-  }
-  .sw-card {
-    padding: 1rem 1.15rem;
-    border-radius: 6px;
-    font-size: 0.9rem;
-  }
-  .sw-card.strong {
-    background: rgba(39,174,96,0.12);
-    border-left: 4px solid var(--green);
-  }
-  .sw-card.weak {
-    background: rgba(231,76,60,0.1);
-    border-left: 4px solid var(--red);
-  }
-  .sw-card strong { display: block; margin-bottom: 0.35rem; font-size: 0.82rem; letter-spacing: 0.04em; }
-
-  .meta-info {
-    font-size: 0.82rem;
-    color: var(--muted);
-    margin-bottom: 1.5rem;
-    padding: 0.7rem 1rem;
-    background: #f5f2eb;
-    border-radius: 5px;
-  }
-
   footer {
     text-align: center;
-    padding: 2rem 1rem;
-    font-size: 0.8rem;
+    padding: 2.2rem 1rem;
+    font-size: 0.82rem;
     color: #888;
   }
-
-  /* Responsive */
-  @media (max-width: 980px) {
-    .para-block {
-      grid-template-columns: 1fr;
-    }
-    .strong-weak {
-      grid-template-columns: 1fr;
-    }
-    .top-title { max-width: 100%; }
-    .chapter-nav { top: 90px; }
+  @media (max-width: 700px) {
+    .top-title { font-size: 0.95rem; }
+    .chapter-nav { top: 85px; }
+    .para-block { padding: 1.1rem 1.15rem; }
   }
 </style>
 </head>
 <body>
 
-<!-- ========== TOP NAV ========== -->
 <nav class="top-nav">
   <div class="top-nav-inner">
     <div class="top-title">
       應用地文性淹排水模式提升鹽田濕地之棲地品質—以七股鹽田濕地為例
-      <span>國立成功大學 · 自然災害減災及管理國際碩士學位學程 · 碩士論文（張家誌，2021）</span>
-    </div>
-    <div class="legend">
-      <div class="legend-item"><span class="swatch yellow"></span>核心論點／Thesis</div>
-      <div class="legend-item"><span class="swatch red"></span>關鍵概念／術語</div>
-      <div class="legend-item"><span class="swatch blue"></span>實證證據／數據</div>
-      <div class="legend-item"><span class="swatch green"></span>讓步／反駁處理</div>
-      <div class="legend-item"><span class="swatch purple"></span>方法論說明</div>
+      <span>國立成功大學 · 自然災害減災及管理國際碩士學位學程 · 碩士論文（張家誌，2021） · 雙語全文閱讀版</span>
     </div>
   </div>
 </nav>
 
-<!-- ========== CHAPTER NAV ========== -->
 <nav class="chapter-nav">
   <div class="chapter-nav-inner">
     <a href="#abstract">摘要 Abstract</a>
     <a href="#ch1-bg">1.1 背景</a>
     <a href="#ch1-purpose">1.2 研究動機與目的</a>
-    <a href="#ch2-factors">2.2 影響生物之環境因子</a>
-    <a href="#ch2-gate">2.3 水門操作對棲地影響</a>
-    <a href="#ch2-phd">2.4 PHD 模式應用</a>
+    <a href="#ch2-factors">2.2 環境因子</a>
+    <a href="#ch2-gate">2.3 水門操作</a>
+    <a href="#ch2-phd">2.4 PHD 模式</a>
     <a href="#ch3-method">3 研究方法</a>
-    <a href="#results">4 主要模擬結果</a>
+    <a href="#results">4 主要結果</a>
     <a href="#conclusion">5 結論與建議</a>
-    <a href="#overview">論證結構總覽</a>
   </div>
 </nav>
 
 <div class="container">
 
 <div class="meta-info">
-  本批註檔案聚焦論文<strong>論證結構與邏輯層次</strong>，選取承載核心論證鏈的關鍵段落進行英中對照與功能分析。黃色標示作者核心主張，藍色為實證支撐，紫色為方法選擇，綠色為對潛在質疑的處理。
+  本頁為論文關鍵章節的<strong>雙語對照閱讀版</strong>（英文原文＋中文意譯）。已移除結構分析與高亮批註，方便直接閱讀內容。中文採意譯，力求流暢如中文學術寫作。
 </div>
 
-<!-- ========== ABSTRACT ========== -->
-<div class="section-header" id="abstract">摘要 Abstract — 問題界定與研究主張的濃縮</div>
+<div class="section-header" id="abstract">摘要 Abstract</div>
 
 <div class="para-block">
-  <div class="left-col">
-    <div class="en-text">
-      The Qigu salt pan wetland is located in the Qigu District, Tainan City, which originally belonged to the salt industry. After being completely abandoned in 2002, due to its rich ecological environment, it was announced as a national-level important wetland in 2007. Most of the Qigu salt pans are abandoned salt pans. The large wetlands produced by these abandoned salt pans can be used as <mark class="red">alternative habitats</mark> for a variety of biological habitats, foraging and reproduction. However, in order to avoid being affected by the tide when salt making in the early years, most of the salt pans were built as <mark class="red">closed designs</mark>. After the salt pans were completely abandoned, due to neglect of management and use, in non-flood period, the water level in the salt pans was often too low because of poor rainfall, resulting in <mark class="red">poor water quality and excessive salinity</mark> in the salt pans. These problems will limit the possibility of biological use of these anthropogenic habitats.
-    </div>
-    <div class="divider"></div>
-    <div class="zh-text">
-      七股鹽田濕地位於台南市七股區，原屬鹽業用地。2002年全面廢曬後，因其豐富生態環境，於2007年被評定為國家級重要濕地。濕地內多數為廢曬鹽田，這些大片人工濕地可作為多種生物的替代性棲地、覓食與繁殖場所。然而，早期為避免潮汐影響，鹽田多採封閉式設計。廢曬後因疏於管理，非汛期缺乏降雨時，鹽田水位常過低，導致水質不佳、鹽度過高，進而限制生物利用這些人為棲地的可能性。
-    </div>
+  <div class="en-text">
+    The Qigu salt pan wetland is located in the Qigu District, Tainan City, which originally belonged to the salt industry. After being completely abandoned in 2002, due to its rich ecological environment, it was announced as a national-level important wetland in 2007. Most of the Qigu salt pans are abandoned salt pans. The large wetlands produced by these abandoned salt pans can be used as alternative habitats for a variety of biological habitats, foraging and reproduction. However, in order to avoid being affected by the tide when salt making in the early years, most of the salt pans were built as closed designs. After the salt pans were completely abandoned, due to neglect of management and use, in non-flood period, the water level in the salt pans was often too low because of poor rainfall, resulting in poor water quality and excessive salinity in the salt pans. These problems will limit the possibility of biological use of these anthropogenic habitats.
   </div>
-  <div class="anno-card">
-    <h4>段落批註</h4>
-    <div class="anno-label">① 段落功能</div>
-    <p>問題界定（Problem Statement）。確立研究對象的生態價值與現況困境。</p>
-    <div class="anno-label">② 邏輯角色</div>
-    <p>論證起點。先肯定廢曬鹽田的「替代性棲地」潛力，再指出封閉式設計導致的水文斷裂，形成「潛力未被實現」的張力。</p>
-    <div class="anno-label">③ 技巧／潛在漏洞</div>
-    <p>技巧：以「原本可作為替代棲地」對比「實際受限」製造研究必要性。潛在漏洞：尚未量化「水質不佳／鹽度過高」對特定物種（如黑面琵鷺）的實際影響門檻。</p>
+  <div class="divider"></div>
+  <div class="zh-text">
+    七股鹽田濕地位於台南市七股區，原屬鹽業用地。2002年全面廢曬後，因其豐富生態環境，於2007年被評定為國家級重要濕地。濕地內多數為廢曬鹽田，這些大片人工濕地可作為多種生物的替代性棲地、覓食與繁殖場所。然而，早期為避免潮汐影響，鹽田多採封閉式設計。廢曬後因疏於管理，非汛期缺乏降雨時，鹽田水位常過低，導致水質不佳、鹽度過高，進而限制生物利用這些人為棲地的可能性。
   </div>
 </div>
 
 <div class="para-block">
-  <div class="left-col">
-    <div class="en-text">
-      Therefore, this study hoped to satisfy the two needs of <mark class="yellow">improving the quality of the salt pan habitat and flood prevention in the surrounding villages</mark> through different <mark class="red">water gate operation strategies</mark>. At the same time, this study would also discuss the impact of engineering methods to change the condition of the habitat on the operation of the water gate. In this study, the water inflow operation was designed into 2 scenarios, and the draining operation was divided into 6 scenarios according to the tidal relationship of each month. The rainfall scenarios with different return periods were used to assess the impact of water inflow operation on the flood detention function of salt pans. After determining the water gate operation strategy, this study would design <mark class="purple">culvert dredging, mound removal, and elevation change</mark>, these three engineering methods to improve habitat.
-    </div>
-    <div class="divider"></div>
-    <div class="zh-text">
-      因此，本研究希望透過不同的水門操作策略，同時滿足「提升鹽田棲地品質」與「周遭村落防洪」兩項需求，並探討工程方法改變棲地現狀對水門操作的影響。引水操作設計為2種情境，排水操作依各月潮汐關係分為6種狀況；不同重現期降雨情境則用以評估引水操作對鹽田滯洪功能的影響。在確定水門操作策略後，再設計涵洞疏通、擋土移除、改變高程等三種工程方法進行棲地改善。
-    </div>
+  <div class="en-text">
+    Therefore, this study hoped to satisfy the two needs of improving the quality of the salt pan habitat and flood prevention in the surrounding villages through different water gate operation strategies. At the same time, this study would also discuss the impact of engineering methods to change the condition of the habitat on the operation of the water gate. In this study, the water inflow operation was designed into 2 scenarios, and the draining operation was divided into 6 scenarios according to the tidal relationship of each month. The rainfall scenarios with different return periods were used to assess the impact of water inflow operation on the flood detention function of salt pans. After determining the water gate operation strategy, this study would design culvert dredging, mound removal, and elevation change, these three engineering methods to improve habitat.
   </div>
-  <div class="anno-card">
-    <h4>段落批註</h4>
-    <div class="anno-label">① 段落功能</div>
-    <p>提出核心研究主張與研究設計輪廓。</p>
-    <div class="anno-label">② 邏輯角色</div>
-    <p>Thesis 宣告。明確指出「雙重目標」（棲地品質＋防洪）必須同時滿足，並預告方法（情境設計＋工程介入）。</p>
-    <div class="anno-label">③ 技巧／潛在漏洞</div>
-    <p>技巧：將「生態」與「防災」綁定為不可分割的共同目標，避免被批評只顧生態而犧牲防洪。漏洞：兩目標之間可能存在權衡（trade-off），摘要尚未說明如何處理衝突情境。</p>
+  <div class="divider"></div>
+  <div class="zh-text">
+    因此，本研究希望透過不同的水門操作策略，同時滿足「提升鹽田棲地品質」與「周遭村落防洪」兩項需求，並探討工程方法改變棲地現狀對水門操作的影響。引水操作設計為2種情境，排水操作依各月潮汐關係分為6種狀況；不同重現期降雨情境則用以評估引水操作對鹽田滯洪功能的影響。在確定水門操作策略後，再設計涵洞疏通、擋土移除、改變高程等三種工程方法進行棲地改善。
   </div>
 </div>
 
 <div class="para-block">
-  <div class="left-col">
-    <div class="en-text">
-      The water inflow operation simulation results showed that if the detention pond next to the salt pan was also included in the scope of the water inflow operation, the state of continuous water inflow can be achieved. The water in the salt pan would follow the tidal fluctuations outside the water gate to make the salt pan become a <mark class="yellow">kind of tidal wetland</mark>. From the results of the draining scenario, it was found that <mark class="blue">January was the easiest month to drain, and August was the most difficult month</mark>. Since rainfall events mostly occur in summer, so this study suggested that as long as there was no rainfall event in summer, draining operations should be carried out to keep the salt pan water level at a low water level. From the rainfall simulation, it was found that the <mark class="blue">long duration water inflow operation did not increase the risk of flooding in the surrounding villages</mark>. The results of the engineering scenario showed that the culvert dredging could make the water circulation in the salt pan a little smoother. Remove the mound in the channel, no matter in any scenario, there was no change in the water depth of salt pan. <mark class="blue">Changing the elevation could not only increase the flood detention capacity of the salt pan, but also significantly increased the water area in the salt pan</mark>.
-    </div>
-    <div class="divider"></div>
-    <div class="zh-text">
-      引水操作模擬結果顯示，若將鹽田旁蓄水池一併納入引水範圍，可達成持續常態引水，鹽田內水位隨水門外潮汐波動，形成類感潮濕地。排水情境結果顯示，1月最易排水、8月最難；由於降雨多發生於夏季，建議夏季只要無降雨事件即進行排水，使鹽田維持低水位。降雨模擬發現，長時間引水操作並未增加周遭村落淹水風險。工程情境結果則顯示，涵洞疏通能讓水循環稍加順暢；移除渠道擋土對水深幾乎無影響；改變高程不僅可增加滯洪空間，亦能明顯提升鹽田水域面積。
-    </div>
+  <div class="en-text">
+    The water inflow operation simulation results showed that if the detention pond next to the salt pan was also included in the scope of the water inflow operation, the state of continuous water inflow can be achieved. The water in the salt pan would follow the tidal fluctuations outside the water gate to make the salt pan become a kind of tidal wetland. From the results of the draining scenario, it was found that January was the easiest month to drain, and August was the most difficult month. Since rainfall events mostly occur in summer, so this study suggested that as long as there was no rainfall event in summer, draining operations should be carried out to keep the salt pan water level at a low water level. From the rainfall simulation, it was found that the long duration water inflow operation did not increase the risk of flooding in the surrounding villages. The results of the engineering scenario showed that the culvert dredging could make the water circulation in the salt pan a little smoother. Remove the mound in the channel, no matter in any scenario, there was no change in the water depth of salt pan. Changing the elevation could not only increase the flood detention capacity of the salt pan, but also significantly increased the water area in the salt pan.
   </div>
-  <div class="anno-card">
-    <h4>段落批註</h4>
-    <div class="anno-label">① 段落功能</div>
-    <p>摘要式結果陳述，提供核心發現作為後續詳細論證的預告。</p>
-    <div class="anno-label">② 邏輯角色</div>
-    <p>證據預覽。直接回應 Thesis 中的雙重目標：棲地品質提升（類潮汐濕地、水域面積增加）與防洪安全（不增加村落風險）。</p>
-    <div class="anno-label">③ 技巧／潛在漏洞</div>
-    <p>技巧：用「類感潮濕地」這個概念性轉譯，把操作結果轉化為生態意義。漏洞：摘要未呈現模擬校驗精度或假設限制，讀者需至正文確認模型可信度。</p>
-  </div>
-</div>
-
-<!-- ========== CHAPTER 1.1 ========== -->
-<div class="section-header" id="ch1-bg">Chapter 1.1 Background — 從全球遷徙路線到在地封閉鹽田的問題鏈</div>
-
-<div class="para-block">
-  <div class="left-col">
-    <div class="en-text">
-      The East Asian-Australasian Flyway has the most abundant of migratory bird species in the world, including many threatened bird species. In recent years, the loss of habitat due to climate change and human factors has gradually reduced the number of bird populations on the East Asian-Australasian Flyway. As an important stop-over site on the flyway, Taiwan is visited and used by a large number of migratory birds every autumn and winter, including the <mark class="red">black-faced spoonbill</mark> which is classified as endangered by the IUCN. Globe more than 50% of spoonbills winter regularly on the southwestern coast of Taiwan, and the Qigu District in Tainan has the largest number.
-    </div>
-    <div class="divider"></div>
-    <div class="zh-text">
-      東亞–澳洲遷飛路線擁有全球最豐富的候鳥物種，包含多種受脅鳥類。近年因氣候變遷與人為因素造成棲地喪失，遷飛路線上的鳥類族群逐漸減少。台灣作為重要停歇地，每年秋冬有大量候鳥利用，其中包括被IUCN列為瀕危的黑面琵鷺。全球超過50%的黑面琵鷺固定於台灣西南沿海度冬，而台南七股區擁有最大數量。
-    </div>
-  </div>
-  <div class="anno-card">
-    <h4>段落批註</h4>
-    <div class="anno-label">① 段落功能</div>
-    <p>宏观背景引入，建立研究的全球–在地連結。</p>
-    <div class="anno-label">② 邏輯角色</div>
-    <p>價值錨定。透過「全球半數以上黑面琵鷺度冬於此」把七股鹽田的重要性拉到國際保育層級，為後續改善行動提供正當性。</p>
-    <div class="anno-label">③ 技巧／潛在漏洞</div>
-    <p>技巧：由大尺度（Flyway）逐步縮小到研究地點，符合「漏斗式」引言結構。漏洞：此段尚未說明「鹽田」與「黑面琵鷺」之間的具體依賴關係（覓食水深、鹽度偏好等），留待後文補足。</p>
+  <div class="divider"></div>
+  <div class="zh-text">
+    引水操作模擬結果顯示，若將鹽田旁蓄水池一併納入引水範圍，可達成持續常態引水，鹽田內水位隨水門外潮汐波動，形成類感潮濕地。排水情境結果顯示，1月最易排水、8月最難；由於降雨多發生於夏季，建議夏季只要無降雨事件即進行排水，使鹽田維持低水位。降雨模擬發現，長時間引水操作並未增加周遭村落淹水風險。工程情境結果則顯示，涵洞疏通能讓水循環稍加順暢；移除渠道擋土對水深幾乎無影響；改變高程不僅可增加滯洪空間，亦能明顯提升鹽田水域面積。
   </div>
 </div>
 
 <div class="para-block">
-  <div class="left-col">
-    <div class="en-text">
-      In order to avoid the influence of tides when salt making in the early years, most of the salt pans were planned as closed designs, and builded the water conservancy facilities, such as culverts, water gates, channels, to take water from the sea to the salt pan. After stop salt making, most of these water conservancy facilities have lost their functions because of lack management and use. Frequent rainfall during the flood period of spring and summer often causes the water level in the salt pan to be high. Due to problems such as culvert collapse and channel siltation, the water in the salt pan cannot be efficiently drained. The low detention storage sometimes causes flooding in the surrounding village during the rainfall. During non-flood period in autumn and winter, due to lack of rainfall and no natural hydrological connection, most of the salt pans are dry. These situation would lead to problems such as poor water quality and high salinity in the salt pans, and these problems might limit the bioavailability.
-    </div>
-    <div class="divider"></div>
-    <div class="zh-text">
-      早期為避免潮汐影響，鹽田多採封閉式設計，並設置涵洞、水門、渠道等水利設施自海上引水。停曬後，這些設施因疏於管理而功能喪失。春夏汛期頻繁降雨使鹽田水位偏高，加上涵洞塌陷、渠道淤積，排水效率低落，滯洪空間不足，有時造成周邊村落淹水。秋冬非汛期則因缺乏降雨與自然水文連結，多數鹽田乾涸，導致水質惡化、鹽度升高，進而限制生物可利用性。
-    </div>
-  </div>
-  <div class="anno-card">
-    <h4>段落批註</h4>
-    <div class="anno-label">① 段落功能</div>
-    <p>具體化問題機制（Problem Mechanism）。</p>
-    <div class="anno-label">② 邏輯角色</div>
-    <p>因果鏈建立。將「封閉設計＋設施失能」連結到「汛期滯洪不足」與「非汛期棲地劣化」雙重後果，為後續「水門操作」提供直接對應解方。</p>
-    <div class="anno-label">③ 技巧／潛在漏洞</div>
-    <p>技巧：用時間軸（汛期 vs 非汛期）呈現同一系統的兩種病理，顯示問題的季節性結構。漏洞：「might limit the bioavailability」用詞較謹慎，但後文若未提供生物調查證據，此因果主張仍屬推論。</p>
-  </div>
+  <div class="en-text">Keyword: Salt pan wetland, PHD Model, Water gate operation, habitat improvement</div>
+  <div class="divider"></div>
+  <div class="zh-text">關鍵字：<span class="keyword">鹽田濕地</span> <span class="keyword">地文性淹排水模式</span> <span class="keyword">水門操作</span> <span class="keyword">提升棲地品質</span></div>
 </div>
 
-<!-- ========== CHAPTER 1.2 ========== -->
-<div class="section-header" id="ch1-purpose">Chapter 1.2 Motivation and Purpose — 核心論點正式提出</div>
+<div class="section-header" id="ch1-bg">Chapter 1.1 Background</div>
 
 <div class="para-block">
-  <div class="left-col">
-    <div class="en-text">
-      In recent years, many studies used water gate operation to control the water level in the salt pan, and the purpose were improve quality of the habitat or increase the detention storage through artificial method. This study selected the Taiqu salt pan in the Qigu as the study area. Using the <mark class="purple">Physiographic drainage-inundation Model (PHD Model)</mark> to simulate the current situation in different operating scenarios according to the needs of drainage and drainage. At the same time assessed the impact of water inflow operations on the flood prevention demand of nearby villages. Then combined the settings of different engineering scenarios such as culvert dredging, mound removed, changing elevations, to discuss the impact of different engineering methods on water inflow operation, drainage operation, and the flood detention function of Taiqu salt pans. <mark class="yellow">The aim of this study have two: (1) Integrate the results of the current operation scenario condition and establish a long-term watergate operation strategy ; (2) Discuss the impact of using engineering methods to change habitats on different water gate operation demand. Find a balance between flood prevention and improvement of habitat quality</mark>, and provide a reference for future government or related units when doing related improvement engineering projects.
-    </div>
-    <div class="divider"></div>
-    <div class="zh-text">
-      近年已有多項研究透過水門操作控制鹽田水位，以提升棲地品質或增加滯洪容量。本研究選定七股台區鹽田為研究區，應用地文性淹排水模式（PHD Model）模擬不同操作情境下的現況，並評估引水操作對鄰近村落防洪需求的影響。進一步結合涵洞疏通、擋土移除、改變高程等工程情境，探討工程方法對引水、排水及滯洪功能的影響。<strong>研究目標有二：（1）整合現況操作情境結果，建立長期水門操作策略；（2）探討工程改變棲地對不同水門操作需求的影響，尋求防洪與棲地品質提升之間的平衡</strong>，供未來政府或相關單位辦理改善工程時參考。
-    </div>
+  <div class="en-text">
+    The East Asian-Australasian Flyway has the most abundant of migratory bird species in the world, including many threatened bird species. In recent years, the loss of habitat due to climate change and human factors has gradually reduced the number of bird populations on the East Asian-Australasian Flyway. As an important stop-over site on the flyway, Taiwan is visited and used by a large number of migratory birds every autumn and winter, including the black-faced spoonbill which is classified as endangered by the IUCN. Globe more than 50% of spoonbills winter regularly on the southwestern coast of Taiwan, and the Qigu District in Tainan has the largest number.
   </div>
-  <div class="anno-card">
-    <h4>段落批註</h4>
-    <div class="anno-label">① 段落功能</div>
-    <p>研究動機收束與研究目的正式陳述（Thesis Statement）。</p>
-    <div class="anno-label">② 邏輯角色</div>
-    <p>全文最核心的論點定位。明確宣告「雙目標平衡」與「操作策略＋工程介入」的雙軌路徑，後續所有模擬皆服務於此。</p>
-    <div class="anno-label">③ 技巧／潛在漏洞</div>
-    <p>技巧：把既有研究（水門操作）作為基礎，再加入「工程情境」與「長期策略」作為本研究增量。漏洞：「找平衡」是理想表述，但若模擬結果顯示兩者無法同時最大化，作者如何處理權衡優先序？正文需觀察。</p>
-  </div>
-</div>
-
-<!-- ========== CHAPTER 2.2 ========== -->
-<div class="section-header" id="ch2-factors">Chapter 2.2 Environmental Factors — 為「水位操作」建立理論正當性</div>
-
-<div class="para-block">
-  <div class="left-col">
-    <div class="en-text">
-      Ma et al. (2010) divided the environmental factors affecting waterbirds into nine items including <mark class="red">water depth, water level fluctuations, vegetation, salinity, landforms, food supply, wetland area, wetland connectivity</mark>, and others. The survey results showed that different water depth environments can attract different species of birds to use. Water level fluctuations caused by tides or seasons can increase habitat diversity. Habitat too high salinity will reduce the willingness of birds to use. Abundant food supply can quickly attract a large number of waterbirds to use the habitat.
-    </div>
-    <div class="divider"></div>
-    <div class="zh-text">
-      Ma 等人（2010）將影響水鳥的環境因子歸納為九項：水深、水位波動、植被、鹽度、地形、食物供給、濕地面積、濕地連結性等。調查顯示，不同水深環境可吸引不同鳥種利用；潮汐或季節造成的水位波動能增加棲地多樣性；過高鹽度會降低鳥類利用意願；豐富的食物供給則可迅速吸引大量水鳥。
-    </div>
-  </div>
-  <div class="anno-card">
-    <h4>段落批註</h4>
-    <div class="anno-label">① 段落功能</div>
-    <p>文獻支撐：界定「可操作」的關鍵環境變數。</p>
-    <div class="anno-label">② 邏輯角色</div>
-    <p>為後續「水門操作可改善棲地」提供理論基礎。作者刻意凸顯水深、水位波動、鹽度，因為這些正是水門操作最直接能影響的變數。</p>
-    <div class="anno-label">③ 技巧／潛在漏洞</div>
-    <p>技巧：選擇性聚焦與本研究可控變數高度相關的因子，形成「文獻→操作變數」的緊密對應。漏洞：未深入討論「食物供給」與「水位操作」之間的間接路徑（例如底棲生物恢復時間），可能高估短期操作的生態效益。</p>
-  </div>
-</div>
-
-<!-- ========== CHAPTER 2.3 ========== -->
-<div class="section-header" id="ch2-gate">Chapter 2.3 Impact of Gate Operation — 既有實證支持「操作有效」</div>
-
-<div class="para-block">
-  <div class="left-col">
-    <div class="en-text">
-      Rocha et al. (2016) conducted a water gate operation experiment in a salt pan fish pond in the Tagus estuary region of Portugal to observe the impact of changes in the water level in the fish pond on benthic species and waterbirds. This study opened the watergate to let water flow into the pond during non-flood period and keeps the pond at a high water level for up to seven months. During this period, the abundance of benthic organisms continued to increase over time. When the water gate was opened to drain the water, as the water level decreased, waterbirds from the nearby estuary quickly gathered in the breeding pond for food, and about 6% of the total estuary waterbirds came to use it. From the results, it can be seen that benthic organisms need to maintain a certain amount of water in the habitat to grow, and water birds are very sensitive to the food supply in the habitat. This experiment shows that the abundance of habitats can be increased by the operation of water gate.
-    </div>
-    <div class="divider"></div>
-    <div class="zh-text">
-      Rocha 等人（2016）在葡萄牙塔霍河口鹽田魚塭進行水門操作實驗。非汛期開啟水門引水並維持高水位長達七個月，期間底棲生物豐度持續上升；排水後水位下降，鄰近河口約6%的水鳥迅速聚集覓食。結果顯示底棲生物需要一定水量才能生長，水鳥則對食物供給高度敏感。此實驗證明水門操作可增加棲地豐度。
-    </div>
-  </div>
-  <div class="anno-card">
-    <h4>段落批註</h4>
-    <div class="anno-label">① 段落功能</div>
-    <p>提供國際實證案例，支持「水門操作能改善棲地」的主張。</p>
-    <div class="anno-label">② 邏輯角色</div>
-    <p>外部效度補強。用海外成功案例降低「在台灣鹽田操作是否有效」的質疑。</p>
-    <div class="anno-label">③ 技巧／潛在漏洞</div>
-    <p>技巧：引用同時觀察底棲與鳥類的研究，強化「水文→食物→鳥類」的因果鏈。漏洞：該實驗維持高水位長達七個月，與本研究「短期潮汐式操作」時程不同，可類比性需謹慎。</p>
+  <div class="divider"></div>
+  <div class="zh-text">
+    東亞–澳洲遷飛路線擁有全球最豐富的候鳥物種，包含多種受脅鳥類。近年因氣候變遷與人為因素造成棲地喪失，遷飛路線上的鳥類族群逐漸減少。台灣作為重要停歇地，每年秋冬有大量候鳥利用，其中包括被IUCN列為瀕危的黑面琵鷺。全球超過50%的黑面琵鷺固定於台灣西南沿海度冬，而台南七股區擁有最大數量。
   </div>
 </div>
 
 <div class="para-block">
-  <div class="left-col">
-    <div class="en-text">
-      Kuo and Wang (2018) used the operation method of water inflow in non-flood period to improve the habitat of the Chiayi Budai salt pan wetland, and combined with bird surveys before and after the operation to assess its impact on ecosystem services. This study opened the watergate, with the tidal cycle of the channel outside the water gate, to let water flow into the salt pan, and the operation duration about 5.5 hours. The results showed that during the operation of the water gate, about <mark class="blue">12,600 cubic meters of water flowed into the salt field</mark> from the channel, and the water level in some salt pans rose significantly. The increase in water content of the habitat and the number of birds indicated that the operation of the water gate can effectively improve the two ecosystem services of climate regulation and biodiversity.
-    </div>
-    <div class="divider"></div>
-    <div class="zh-text">
-      郭與王（2018）於非汛期對嘉義布袋鹽田進行引水操作，並結合操作前後鳥類調查評估生態系統服務。依渠道潮汐週期開啟水門約5.5小時，結果顯示約12,600立方公尺的水流入鹽田，部分區域水位明顯上升。棲地含水量與鳥類數量的增加，顯示水門操作可有效提升氣候調節與生物多樣性兩項生態系統服務。
-    </div>
+  <div class="en-text">
+    In order to avoid the influence of tides when salt making in the early years, most of the salt pans were planned as closed designs, and builded the water conservancy facilities, such as culverts, water gates, channels, to take water from the sea to the salt pan. After stop salt making, most of these water conservancy facilities have lost their functions because of lack management and use. Frequent rainfall during the flood period of spring and summer often causes the water level in the salt pan to be high. Due to problems such as culvert collapse and channel siltation, the water in the salt pan cannot be efficiently drained. The low detention storage sometimes causes flooding in the surrounding village during the rainfall. During non-flood period in autumn and winter, due to lack of rainfall and no natural hydrological connection, most of the salt pans are dry. These situation would lead to problems such as poor water quality and high salinity in the salt pans, and these problems might limit the bioavailability.
   </div>
-  <div class="anno-card">
-    <h4>段落批註</h4>
-    <div class="anno-label">① 段落功能</div>
-    <p>提供台灣本土（同指導教授團隊）的直接先例。</p>
-    <div class="anno-label">② 邏輯角色</div>
-    <p>方法與地點的連續性。布袋經驗直接支持七股研究的可行性，並暗示本研究是該系列工作的延伸。</p>
-    <div class="anno-label">③ 技巧／潛在漏洞</div>
-    <p>技巧：引用同實驗室先前成果，建立研究傳承。潛在問題：若讀者質疑「團隊自引過多」，可能影響獨立性觀感；但數據本身（12,600 m³）仍具參考價值。</p>
+  <div class="divider"></div>
+  <div class="zh-text">
+    早期為避免潮汐影響，鹽田多採封閉式設計，並設置涵洞、水門、渠道等水利設施自海上引水。停曬後，這些設施因疏於管理而功能喪失。春夏汛期頻繁降雨使鹽田水位偏高，加上涵洞塌陷、渠道淤積，排水效率低落，滯洪空間不足，有時造成周邊村落淹水。秋冬非汛期則因缺乏降雨與自然水文連結，多數鹽田乾涸，導致水質惡化、鹽度升高，進而限制生物可利用性。
   </div>
 </div>
 
-<!-- ========== CHAPTER 2.4 ========== -->
-<div class="section-header" id="ch2-phd">Chapter 2.4 PHD Model — 方法選擇的正當性</div>
+<div class="section-header" id="ch1-purpose">Chapter 1.2 Motivation and Purpose</div>
 
 <div class="para-block">
-  <div class="left-col">
-    <div class="en-text">
-      The <mark class="purple">Physiographic Drainage-inundation Model (PHD Model)</mark> is a physical process-based quasi two-dimensional model developed by Chen et al. (2007). The PHD Model use Cunge’s quasi two-dimensional flow theory to analyze surface water flow phenomena, and establishes mathematical models with numerical methods. For the simulation, the model is combined with geographic information system and perform calculation according to the geographic characteristics of the study area. Nowadays, many scholars have used the PHD Model to explore the flooding and water depth change trends in the different area under different scenarios.
-    </div>
-    <div class="divider"></div>
-    <div class="zh-text">
-      地文性淹排水模式（PHD Model）是由陳等人（2007）發展的物理過程式準二維模式。該模式採用 Cunge 準二維流理論分析地表水流現象，並以數值方法建立數學模式。模擬時結合地理資訊系統，依研究區地理特性進行計算。目前已有多位學者應用 PHD 模式探討不同情境下的淹水與水深變化趨勢。
-    </div>
+  <div class="en-text">
+    In recent years, many studies used water gate operation to control the water level in the salt pan, and the purpose were improve quality of the habitat or increase the detention storage through artificial method. This study selected the Taiqu salt pan in the Qigu as the study area. Using the Physiographic drainage-inundation Model (PHD Model) to simulate the current situation in different operating scenarios according to the needs of drainage and drainage. At the same time assessed the impact of water inflow operations on the flood prevention demand of nearby villages. Then combined the settings of different engineering scenarios such as culvert dredging, mound removed, changing elevations, to discuss the impact of different engineering methods on water inflow operation, drainage operation, and the flood detention function of Taiqu salt pans. The aim of this study have two: (1) Integrate the results of the current operation scenario condition and establish a long-term watergate operation strategy ; (2) Discuss the impact of using engineering methods to change habitats on different water gate operation demand. Find a balance between flood prevention and improvement of habitat quality, and provide a reference for future government or related units when doing related improvement engineering projects.
   </div>
-  <div class="anno-card">
-    <h4>段落批註</h4>
-    <div class="anno-label">① 段落功能</div>
-    <p>方法論說明與工具選擇理由。</p>
-    <div class="anno-label">② 邏輯角色</div>
-    <p>方法正當性。強調「物理過程基礎」與「準二維＋GIS」特性，說明其適合複雜地形的鹽田水動力模擬。</p>
-    <div class="anno-label">③ 技巧／潛在漏洞</div>
-    <p>技巧：先介紹模型來源與理論基礎，再指出已有廣泛應用，降低「新工具不成熟」的疑慮。漏洞：未在此比較 PHD 與其他水動力模式（如 HEC-RAS 2D、Delft3D）的優劣，讀者難以判斷選擇是否最佳。</p>
+  <div class="divider"></div>
+  <div class="zh-text">
+    近年已有多項研究透過水門操作控制鹽田水位，以提升棲地品質或增加滯洪容量。本研究選定七股台區鹽田為研究區，應用地文性淹排水模式（PHD Model）模擬不同操作情境下的現況，並評估引水操作對鄰近村落防洪需求的影響。進一步結合涵洞疏通、擋土移除、改變高程等工程情境，探討工程方法對引水、排水及滯洪功能的影響。研究目標有二：（1）整合現況操作情境結果，建立長期水門操作策略；（2）探討工程改變棲地對不同水門操作需求的影響，尋求防洪與棲地品質提升之間的平衡，供未來政府或相關單位辦理改善工程時參考。
   </div>
 </div>
 
+<div class="section-header" id="ch2-factors">Chapter 2.2 Environmental Factors</div>
+
 <div class="para-block">
-  <div class="left-col">
-    <div class="en-text">
-      Kuo (2015) application of the physiographic drainage-inundation model in Chiayi Budai salt pan wetland to simulate the results of water gate operation. ... The results showed that Scenario B and Scenario D can effectively increase the flood detention capacity of salt pan, which proves that water gate operation can be used for flood management. Peng (2017) planned the Chiayi Budai salt pan into 10 different proportions of detention ponds and fish ponds ... Therefore, it was not recommended to set the salt pan as a fish ponds.
-    </div>
-    <div class="divider"></div>
-    <div class="zh-text">
-      郭（2015）將 PHD 模式應用於嘉義布袋鹽田，模擬水門操作結果……顯示特定操作情境可有效增加鹽田滯洪容量，證明水門操作可用於洪水管理。彭（2017）則規劃布袋鹽田為不同比例滯洪池與魚塭……結論不建議將鹽田改為魚塭。
-    </div>
+  <div class="en-text">
+    Ma et al. (2010) divided the environmental factors affecting waterbirds into nine items including water depth, water level fluctuations, vegetation, salinity, landforms, food supply, wetland area, wetland connectivity, and others. The survey results showed that different water depth environments can attract different species of birds to use. Water level fluctuations caused by tides or seasons can increase habitat diversity. Habitat too high salinity will reduce the willingness of birds to use. Abundant food supply can quickly attract a large number of waterbirds to use the habitat.
   </div>
-  <div class="anno-card">
-    <h4>段落批註</h4>
-    <div class="anno-label">① 段落功能</div>
-    <p>展示 PHD 模式在同類型場域（鹽田）的既有應用成功案例。</p>
-    <div class="anno-label">② 邏輯角色</div>
-    <p>工具在地驗證。強化「PHD 適合鹽田水門與滯洪研究」的信心，為本研究方法選擇背書。</p>
-    <div class="anno-label">③ 技巧／潛在漏洞</div>
-    <p>技巧：連續引用同實驗室（或同場域）成果，形成方法累積。需注意：過度依賴單一模式可能使研究結論受模式假設限制。</p>
+  <div class="divider"></div>
+  <div class="zh-text">
+    Ma 等人（2010）將影響水鳥的環境因子歸納為九項：水深、水位波動、植被、鹽度、地形、食物供給、濕地面積、濕地連結性等。調查顯示，不同水深環境可吸引不同鳥種利用；潮汐或季節造成的水位波動能增加棲地多樣性；過高鹽度會降低鳥類利用意願；豐富的食物供給則可迅速吸引大量水鳥。
   </div>
 </div>
 
-<!-- ========== CHAPTER 3 METHOD ========== -->
-<div class="section-header" id="ch3-method">Chapter 3 Research Area & Methods — 情境設計的邏輯</div>
+<div class="section-header" id="ch2-gate">Chapter 2.3 Impact of Gate Operation</div>
 
 <div class="para-block">
-  <div class="left-col">
-    <div class="en-text">
-      The research area of this study was Taiqu Salt Pan, which was located in Yancheng Li, Qigu District, Tainan City, Taiwan. The Taiqu Salt Pan was announced as a part of the national important protection wetland in 2007, surrounded by South Channel to the north, the Xiashan Stream estuary to the south, the 61 highways to the east, and the Qigu Lagoon to the west. There were four water gates in the region, the gates respectively called No.1, No.2, No.3, and No.18. ... Due to the gates No.1 and No.2 were limited to local aquaculture fishery using, this study restricts the operable water gates to <mark class="blue">No.3 and No.18</mark>.
-    </div>
-    <div class="divider"></div>
-    <div class="zh-text">
-      研究區為台南市七股區鹽埕里的台區鹽田，2007年被納入國家級重要濕地。北以南渠道、南以下山溪河口、東以61號快速道路、西以七股潟湖為界。區內有四座水門（No.1、No.2、No.3、No.18）。因 No.1 與 No.2 受限於地方養殖漁業使用，本研究僅以 No.3 與 No.18 為可操作水門。
-    </div>
+  <div class="en-text">
+    Rocha et al. (2016) conducted a water gate operation experiment in a salt pan fish pond in the Tagus estuary region of Portugal. This study opened the watergate to let water flow into the pond during non-flood period and keeps the pond at a high water level for up to seven months. During this period, the abundance of benthic organisms continued to increase. When the water gate was opened to drain, waterbirds from the nearby estuary quickly gathered for food (about 6% of total estuary waterbirds). This experiment shows that habitat abundance can be increased by water gate operation.
   </div>
-  <div class="anno-card">
-    <h4>段落批註</h4>
-    <div class="anno-label">① 段落功能</div>
-    <p>研究範圍界定與操作邊界說明。</p>
-    <div class="anno-label">② 邏輯角色</div>
-    <p>方法可操作性。清楚交代為何只操作兩座水門，避免讀者質疑「為何不全面開啟」。</p>
-    <div class="anno-label">③ 技巧／潛在漏洞</div>
-    <p>技巧：提前說明實務限制，增加研究的現實可行性。漏洞：僅操作兩座水門可能低估「全面聯通」的潛在效益，結論的外推性需保留。</p>
+  <div class="divider"></div>
+  <div class="zh-text">
+    Rocha 等人（2016）在葡萄牙塔霍河口鹽田魚塭進行水門操作實驗。非汛期開啟水門引水並維持高水位長達七個月，期間底棲生物豐度持續上升；排水後鄰近河口約6%的水鳥迅速聚集覓食。此實驗證明水門操作可增加棲地豐度。
   </div>
 </div>
 
 <div class="para-block">
-  <div class="left-col">
-    <div class="en-text">
-      In this study, the water inflow operation was designed into 2 scenarios, and the draining operation was divided into 6 scenarios according to the tidal relationship of each month. The rainfall scenarios with different return periods were used to assess the impact of water inflow operation on the flood detention function of salt pans. After determining the water gate operation strategy, this study would design <mark class="purple">culvert dredging, mound removal, and elevation change</mark>, these three engineering methods to improve habitat and gave the suggestion from the results.
-    </div>
-    <div class="divider"></div>
-    <div class="zh-text">
-      本研究將引水操作設計為2種情境，排水操作依各月潮汐關係分為6種狀況；不同重現期降雨情境用以評估引水對滯洪功能的影響。在確定水門操作策略後，再設計涵洞疏通、擋土移除、改變高程三種工程方法改善棲地，並依結果提出建議。
-    </div>
+  <div class="en-text">
+    Kuo and Wang (2018) used water inflow operation in non-flood period at the Chiayi Budai salt pan wetland. Operation duration about 5.5 hours resulted in about 12,600 cubic meters of water flowing into the salt field. The increase in water content and bird numbers indicated effective improvement of climate regulation and biodiversity ecosystem services.
   </div>
-  <div class="anno-card">
-    <h4>段落批註</h4>
-    <div class="anno-label">① 段落功能</div>
-    <p>研究設計總覽（Experimental Design Overview）。</p>
-    <div class="anno-label">② 邏輯角色</div>
-    <p>方法論核心。以「操作情境 → 降雨檢驗 → 工程介入」三層結構，對應「棲地品質」與「防洪」雙目標的驗證路徑。</p>
-    <div class="anno-label">③ 技巧／潛在漏洞</div>
-    <p>技巧：先鎖定操作策略，再疊加工程，邏輯清晰。漏洞：工程方法僅三種，且「改變高程」可能涉及較高成本與生態干擾，可行性討論在結論需更深入。</p>
+  <div class="divider"></div>
+  <div class="zh-text">
+    郭與王（2018）於非汛期對嘉義布袋鹽田進行引水操作約5.5小時，約12,600立方公尺的水流入鹽田。棲地含水量與鳥類數量增加，顯示可有效提升氣候調節與生物多樣性兩項生態系統服務。
   </div>
 </div>
 
-<!-- ========== RESULTS ========== -->
-<div class="section-header" id="results">Chapter 4 Key Simulation Results — 證據鏈的核心</div>
+<div class="section-header" id="ch2-phd">Chapter 2.4 PHD Model</div>
 
 <div class="para-block">
-  <div class="left-col">
-    <div class="en-text">
-      The water inflow operation simulation results showed that if the detention pond next to the salt pan was also included in the scope of the water inflow operation, the state of continuous water inflow can be achieved. The water in the salt pan would follow the tidal fluctuations outside the water gate to make the salt pan become a <mark class="yellow">kind of tidal wetland</mark>.
-    </div>
-    <div class="divider"></div>
-    <div class="zh-text">
-      引水操作模擬顯示，若將鹽田旁蓄水池一併納入引水範圍，可達成持續常態引水；鹽田內水位隨水門外潮汐波動，使鹽田形成「類感潮濕地」。
-    </div>
+  <div class="en-text">
+    The Physiographic Drainage-inundation Model (PHD Model) is a physical process-based quasi two-dimensional model developed by Chen et al. (2007). It uses Cunge’s quasi two-dimensional flow theory and is combined with GIS to perform calculations according to the geographic characteristics of the study area.
   </div>
-  <div class="anno-card">
-    <h4>段落批註</h4>
-    <div class="anno-label">① 段落功能</div>
-    <p>核心正面發現：操作可創造「類潮汐」水文動態。</p>
-    <div class="anno-label">② 邏輯角色</div>
-    <p>直接支撐 Thesis 中「提升棲地品質」的主張。把封閉鹽田轉化為具潮汐特徵的濕地，是概念上的重要躍升。</p>
-    <div class="anno-label">③ 技巧／潛在漏洞</div>
-    <p>技巧：使用「kind of tidal wetland」這個轉譯性概念，讓工程結果具有生態語意。漏洞：模擬僅觀察水深，未直接模擬鹽度或底棲生物響應，生態推論仍屬間接。</p>
+  <div class="divider"></div>
+  <div class="zh-text">
+    地文性淹排水模式（PHD Model）是由陳等人（2007）發展的物理過程式準二維模式，採用 Cunge 準二維流理論，並結合地理資訊系統依研究區地理特性進行計算。
   </div>
 </div>
+
+<div class="section-header" id="ch3-method">Chapter 3 Research Area and Methods</div>
 
 <div class="para-block">
-  <div class="left-col">
-    <div class="en-text">
-      From the results of the draining scenario, it was found that <mark class="blue">January was the easiest month to drain, and August was the most difficult month</mark>. Since rainfall events mostly occur in summer, so this study suggested that as long as there was no rainfall event in summer, draining operations should be carried out to keep the salt pan water level at a low water level.
-    </div>
-    <div class="divider"></div>
-    <div class="zh-text">
-      排水情境結果顯示，1月最易排水、8月最難。由於降雨事件多發生於夏季，本研究建議夏季只要沒有降雨事件，即應進行排水操作，讓鹽田維持低水位。
-    </div>
+  <div class="en-text">
+    The research area was Taiqu Salt Pan in Yancheng Li, Qigu District, Tainan City. Operable water gates were restricted to No.3 and No.18. Water inflow was designed into 2 scenarios; draining into 6 scenarios by monthly tide; rainfall scenarios of different return periods assessed flood detention impact. Three engineering methods were then applied: culvert dredging, mound removal, and elevation change.
   </div>
-  <div class="anno-card">
-    <h4>段落批註</h4>
-    <div class="anno-label">① 段落功能</div>
-    <p>提供季節性操作規則的實證基礎。</p>
-    <div class="anno-label">② 邏輯角色</div>
-    <p>將「長期操作策略」具體化為可執行的月別建議，回應研究目的（1）。</p>
-    <div class="anno-label">③ 技巧／潛在漏洞</div>
-    <p>技巧：把潮汐與降雨季節性結合，提出務實操作原則。漏洞：8月最難排水的發現，可能使「夏季維持低水位」在實務上更難達成，需配套措施。</p>
+  <div class="divider"></div>
+  <div class="zh-text">
+    研究區為台南市七股區鹽埕里台區鹽田。可操作水門為 No.3 與 No.18。引水操作設計為2種情境，排水依各月潮汐分為6種；不同重現期降雨用以評估滯洪影響。其後再設計涵洞疏通、擋土移除、改變高程三種工程方法。
   </div>
 </div>
+
+<div class="section-header" id="results">Chapter 4 Key Simulation Results</div>
 
 <div class="para-block">
-  <div class="left-col">
-    <div class="en-text">
-      From the rainfall simulation, it was found that the <mark class="blue">long duration water inflow operation did not increase the risk of flooding in the surrounding villages</mark>.
-    </div>
-    <div class="divider"></div>
-    <div class="zh-text">
-      降雨模擬結果顯示，長時間的引水操作並未增加周遭村落的淹水風險。
-    </div>
+  <div class="en-text">
+    Including the adjacent detention pond enabled continuous water inflow, making the salt pan behave like a tidal wetland. January was easiest to drain, August hardest; summer draining is recommended when no rainfall occurs. Long-duration inflow did not increase village flooding risk. Culvert dredging slightly improved circulation; mound removal had almost no effect on water depth; elevation change increased both flood detention capacity and water area.
   </div>
-  <div class="anno-card">
-    <h4>段落批註</h4>
-    <div class="anno-label">① 段落功能</div>
-    <p>關鍵安全檢查結果。</p>
-    <div class="anno-label">② 邏輯角色</div>
-    <p>直接回應「雙重目標」中的防洪面向。這是讓生態操作得以被政策接受的必要條件。</p>
-    <div class="anno-label">③ 技巧／潛在漏洞</div>
-    <p>技巧：用不同重現期降雨事件檢驗，顯示結果具穩健性。漏洞：若初始水位因長期引水而偏高，極端事件下的邊際風險仍需更細緻的敏感度分析。</p>
+  <div class="divider"></div>
+  <div class="zh-text">
+    將旁側蓄水池納入引水可達成持續引水，鹽田形成類感潮濕地。1月最易排水、8月最難；建議夏季無雨時排水維持低水位。長時間引水未增加村落淹水風險。涵洞疏通略改善循環；擋土移除幾乎無水深變化；改變高程可同時增加滯洪空間與水域面積。
   </div>
 </div>
+
+<div class="section-header" id="conclusion">Chapter 5 Conclusion and Suggestion</div>
 
 <div class="para-block">
-  <div class="left-col">
-    <div class="en-text">
-      The results of the engineering scenario showed that the culvert dredging could make the water circulation in the salt pan a little smoother. Remove the mound in the channel, no matter in any scenario, there was no change in the water depth of salt pan. <mark class="blue">Changing the elevation could not only increase the flood detention capacity of the salt pan, but also significantly increased the water area in the salt pan</mark>.
-    </div>
-    <div class="divider"></div>
-    <div class="zh-text">
-      工程情境結果顯示：涵洞疏通能讓鹽田內水循環稍加順暢；移除渠道擋土在任何情境下對水深幾乎無影響；改變高程則不僅增加滯洪空間，亦能明顯提升鹽田水域面積。
-    </div>
+  <div class="en-text">
+    This study hoped to provide a reference for future related research on the use of water gate operations or engineering methods to improve the quality of habitats. All scenarios were simulated using the physiographic drainage-inundation model to observe water depth changes in the study area.
   </div>
-  <div class="anno-card">
-    <h4>段落批註</h4>
-    <div class="anno-label">① 段落功能</div>
-    <p>工程介入效果的比較評估。</p>
-    <div class="anno-label">② 邏輯角色</div>
-    <p>回應研究目的（2）。指出哪種工程真正有效，哪種幾乎無效，為實務資源配置提供依據。</p>
-    <div class="anno-label">③ 技巧／潛在漏洞</div>
-    <p>技巧：用「無效果」結果（擋土移除）對比「雙贏」結果（改變高程），凸顯選擇性工程的重要性。漏洞：改變高程的生態副作用（底質擾動、植被喪失）未在模擬中納入，建議需更謹慎。</p>
+  <div class="divider"></div>
+  <div class="zh-text">
+    本研究希望為未來利用水門操作或工程手段提升鹽田棲地品質的相關研究提供參考。上述情境皆應用地文性淹排水模式進行模擬，以觀察研究區域內的水深變化。
   </div>
 </div>
 
-<!-- ========== CONCLUSION ========== -->
-<div class="section-header" id="conclusion">Chapter 5 Conclusion & Suggestion — 論證收束</div>
-
-<div class="para-block">
-  <div class="left-col">
-    <div class="en-text">
-      <mark class="yellow">This study hoped to provide a reference for future related research on the use of water gate operations or engineering methods to improve the quality of habitats.</mark> The above scenarios were all simulated using physiographic drainage-inundation model to observe the changes in water depth in the study area.
-    </div>
-    <div class="divider"></div>
-    <div class="zh-text">
-      本研究希望為未來利用水門操作或工程手段提升鹽田棲地品質的相關研究提供參考。上述情境皆應用地文性淹排水模式進行模擬，以觀察研究區域內的水深變化。
-    </div>
-  </div>
-  <div class="anno-card">
-    <h4>段落批註</h4>
-    <div class="anno-label">① 段落功能</div>
-    <p>研究貢獻定位與謙遜收尾。</p>
-    <div class="anno-label">② 邏輯角色</div>
-    <p>將全文從「特定案例」提升為「可複製的方法參考」，完成論證的外推。</p>
-    <div class="anno-label">③ 技巧／潛在漏洞</div>
-    <p>技巧：強調「參考」而非「標準答案」，符合碩士論文的定位。漏洞：若能更明確提出「優先採用的操作順序＋工程組合」，政策參考價值會更高。</p>
-  </div>
 </div>
-
-<!-- ========== OVERVIEW ========== -->
-<div class="overview" id="overview">
-  <h2>全文論證結構總覽</h2>
-
-  <h3>邏輯骨架</h3>
-  <div class="skeleton">
-    <span class="skel-box">問題：封閉鹽田非汛期乾涸／水質惡化 + 汛期滯洪不足</span>
-    <span class="skel-arrow">→</span>
-    <span class="skel-box">論點：水門操作＋選擇性工程可同時提升棲地品質與維持防洪</span>
-    <span class="skel-arrow">→</span>
-    <span class="skel-box">證據：PHD 模擬（引水／排水／降雨／工程情境）</span>
-    <span class="skel-arrow">→</span>
-    <span class="skel-box">反駁潛在疑慮：長期引水不增加村落淹水風險</span>
-    <span class="skel-arrow">→</span>
-    <span class="skel-box">結論：可建立長期操作策略；改變高程效益最大</span>
-  </div>
-
-  <h3>作者核心主張（一句話版本）</h3>
-  <div class="claim-box">
-    透過依潮汐與季節設計的水門引／排水操作，並搭配涵洞疏通與高程調整等工程手段，可使七股廢曬鹽田形成類感潮水文環境、擴大水域面積並增加滯洪容量，同時不提高周邊村落淹水風險，從而在棲地品質提升與防洪安全之間取得可行平衡。
-  </div>
-
-  <h3>論證最強處 vs 最弱處</h3>
-  <div class="strong-weak">
-    <div class="sw-card strong">
-      <strong>最強處</strong>
-      雙重目標（生態＋防洪）的同時驗證設計。作者不只主張「操作可改善棲地」，更用不同重現期降雨事件檢驗「操作是否增加淹水風險」，使結論具備政策可接受性。這種「先求不傷害防洪，再談生態增益」的結構，是論文最有說服力的地方。
-    </div>
-    <div class="sw-card weak">
-      <strong>最弱處</strong>
-      生態效益的推論仍高度依賴「水深／水域面積」作為代理變數。論文未直接模擬或觀測鹽度動態、底棲生物恢復時程或鳥類實際利用變化，因此「類感潮濕地 → 棲地品質提升」的因果鏈仍屬間接。若能補上至少一季的生物調查，論證強度將顯著提高。
-    </div>
-  </div>
-</div>
-
-</div><!-- end container -->
 
 <footer>
-  雙欄論證批註檔案 · 依據張家誌（2021）國立成功大學碩士論文整理 · 僅供學術閱讀與論證分析使用
+  雙語全文閱讀版 · 依據張家誌（2021）國立成功大學碩士論文關鍵章節整理 · 僅供學術閱讀使用<br>
+  <a href="https://github.com/cheng9487/gay" style="color:#666;">GitHub 倉庫</a>
 </footer>
 
 </body>
