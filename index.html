@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>應用地文性淹排水模式提升鹽田濕地之棲地品質—以七股鹽田濕地為例 | 雙欄論證批註</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0c2340;
+    --navy-light: #163a5f;
+    --paper: #faf8f5;
+    --beige: #f0ece2;
+    --yellow: #f5d76e;
+    --yellow-bg: rgba(245, 215, 110, 0.35);
+    --red: #e74c3c;
+    --red-bg: rgba(231, 76, 60, 0.18);
+    --blue: #3498db;
+    --blue-bg: rgba(52, 152, 219, 0.18);
+    --green: #27ae60;
+    --green-bg: rgba(39, 174, 96, 0.18);
+    --purple: #9b59b6;
+    --purple-bg: rgba(155, 89, 182, 0.18);
+    --text: #1a1a1a;
+    --muted: #5a5a5a;
+    --border: #d9d3c7;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'IBM Plex Sans', system-ui, sans-serif;
+    background: #e8e4dc;
+    color: var(--text);
+    line-height: 1.65;
+  }
+
+  /* ========== TOP NAV ========== */
+  .top-nav {
+    background: var(--navy);
+    color: #fff;
+    padding: 0.9rem 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+  }
+  .top-nav-inner {
+    max-width: 1480px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem 2rem;
+    justify-content: space-between;
+  }
+  .top-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    max-width: 720px;
+    line-height: 1.4;
+  }
+  .top-title span {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 400;
+    opacity: 0.75;
+    margin-top: 0.2rem;
+  }
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem 1rem;
+    font-size: 0.78rem;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+  .swatch {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    flex-shrink: 0;
+  }
+  .swatch.yellow { background: var(--yellow); }
+  .swatch.red { background: var(--red); }
+  .swatch.blue { background: var(--blue); }
+  .swatch.green { background: var(--green); }
+  .swatch.purple { background: var(--purple); }
+
+  /* ========== CHAPTER NAV ========== */
+  .chapter-nav {
+    background: var(--navy-light);
+    position: sticky;
+    top: 68px;
+    z-index: 90;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+  }
+  .chapter-nav-inner {
+    max-width: 1480px;
+    margin: 0 auto;
+    display: flex;
+    overflow-x: auto;
+    gap: 0.15rem;
+    padding: 0.45rem 1rem;
+    scrollbar-width: thin;
+  }
+  .chapter-nav a {
+    color: rgba(255,255,255,0.78);
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: 0.4rem 0.85rem;
+    border-radius: 4px;
+    white-space: nowrap;
+    transition: all 0.15s;
+  }
+  .chapter-nav a:hover {
+    background: rgba(255,255,255,0.12);
+    color: #fff;
+  }
+
+  /* ========== MAIN LAYOUT ========== */
+  .container {
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 1.5rem 1.2rem 4rem;
+  }
+
+  .section-header {
+    background: var(--navy);
+    color: #fff;
+    padding: 0.85rem 1.3rem;
+    margin: 2.2rem 0 1.1rem;
+    border-radius: 6px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+  }
+  .section-header:first-of-type { margin-top: 0.5rem; }
+
+  .para-block {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 1.4rem;
+    margin-bottom: 2rem;
+    align-items: start;
+  }
+
+  /* Left column */
+  .left-col {
+    background: var(--paper);
+    border-radius: 8px;
+    padding: 1.35rem 1.5rem 1.5rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border: 1px solid var(--border);
+  }
+
+  .en-text {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 0.97rem;
+    line-height: 1.75;
+    color: #1c1c1c;
+  }
+
+  .zh-text {
+    margin-top: 1rem;
+    padding: 0.95rem 1.1rem 0.95rem 1.15rem;
+    background: var(--beige);
+    border-left: 3px solid #c4b8a0;
+    border-radius: 0 5px 5px 0;
+    font-size: 0.92rem;
+    line-height: 1.75;
+    color: #2a2a2a;
+  }
+
+  .divider {
+    height: 1px;
+    background: var(--border);
+    margin: 1rem 0 0;
+  }
+
+  /* Highlights */
+  mark.yellow { background: var(--yellow-bg); color: inherit; padding: 0.05em 0.15em; border-radius: 2px; }
+  mark.red { background: var(--red-bg); color: inherit; padding: 0.05em 0.15em; border-radius: 2px; }
+  mark.blue { background: var(--blue-bg); color: inherit; padding: 0.05em 0.15em; border-radius: 2px; }
+  mark.green { background: var(--green-bg); color: inherit; padding: 0.05em 0.15em; border-radius: 2px; }
+  mark.purple { background: var(--purple-bg); color: inherit; padding: 0.05em 0.15em; border-radius: 2px; }
+
+  /* Right column - annotation */
+  .anno-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.1rem 1.2rem;
+    border-left: 4px solid var(--navy);
+    box-shadow: 0 1px 5px rgba(0,0,0,0.07);
+    font-size: 0.86rem;
+    line-height: 1.65;
+  }
+  .anno-card h4 {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--navy);
+    margin-bottom: 0.55rem;
+    font-weight: 700;
+  }
+  .anno-label {
+    font-weight: 600;
+    color: var(--navy-light);
+    font-size: 0.8rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.2rem;
+  }
+  .anno-label:first-of-type { margin-top: 0; }
+  .anno-card p { color: #333; }
+
+  /* Bottom overview */
+  .overview {
+    background: var(--paper);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.8rem 2rem;
+    margin-top: 3rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .overview h2 {
+    font-size: 1.25rem;
+    color: var(--navy);
+    margin-bottom: 1.3rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 2px solid var(--navy);
+  }
+  .overview h3 {
+    font-size: 0.95rem;
+    color: var(--navy-light);
+    margin: 1.4rem 0 0.5rem;
+  }
+  .skeleton {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    align-items: center;
+    font-size: 0.9rem;
+    margin: 0.8rem 0 1.2rem;
+  }
+  .skel-box {
+    background: var(--navy);
+    color: #fff;
+    padding: 0.4rem 0.85rem;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+  .skel-arrow { color: var(--navy); font-weight: 700; }
+  .claim-box {
+    background: var(--yellow-bg);
+    border-left: 4px solid var(--yellow);
+    padding: 0.9rem 1.15rem;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.95rem;
+    margin: 0.6rem 0 1.2rem;
+  }
+  .strong-weak {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+    margin-top: 0.6rem;
+  }
+  .sw-card {
+    padding: 1rem 1.15rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+  }
+  .sw-card.strong {
+    background: rgba(39,174,96,0.12);
+    border-left: 4px solid var(--green);
+  }
+  .sw-card.weak {
+    background: rgba(231,76,60,0.1);
+    border-left: 4px solid var(--red);
+  }
+  .sw-card strong { display: block; margin-bottom: 0.35rem; font-size: 0.82rem; letter-spacing: 0.04em; }
+
+  .meta-info {
+    font-size: 0.82rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    padding: 0.7rem 1rem;
+    background: #f5f2eb;
+    border-radius: 5px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.8rem;
+    color: #888;
+  }
+
+  /* Responsive */
+  @media (max-width: 980px) {
+    .para-block {
+      grid-template-columns: 1fr;
+    }
+    .strong-weak {
+      grid-template-columns: 1fr;
+    }
+    .top-title { max-width: 100%; }
+    .chapter-nav { top: 90px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ========== TOP NAV ========== -->
+<nav class="top-nav">
+  <div class="top-nav-inner">
+    <div class="top-title">
+      應用地文性淹排水模式提升鹽田濕地之棲地品質—以七股鹽田濕地為例
+      <span>國立成功大學 · 自然災害減災及管理國際碩士學位學程 · 碩士論文（張家誌，2021）</span>
+    </div>
+    <div class="legend">
+      <div class="legend-item"><span class="swatch yellow"></span>核心論點／Thesis</div>
+      <div class="legend-item"><span class="swatch red"></span>關鍵概念／術語</div>
+      <div class="legend-item"><span class="swatch blue"></span>實證證據／數據</div>
+      <div class="legend-item"><span class="swatch green"></span>讓步／反駁處理</div>
+      <div class="legend-item"><span class="swatch purple"></span>方法論說明</div>
+    </div>
+  </div>
+</nav>
+
+<!-- ========== CHAPTER NAV ========== -->
+<nav class="chapter-nav">
+  <div class="chapter-nav-inner">
+    <a href="#abstract">摘要 Abstract</a>
+    <a href="#ch1-bg">1.1 背景</a>
+    <a href="#ch1-purpose">1.2 研究動機與目的</a>
+    <a href="#ch2-factors">2.2 影響生物之環境因子</a>
+    <a href="#ch2-gate">2.3 水門操作對棲地影響</a>
+    <a href="#ch2-phd">2.4 PHD 模式應用</a>
+    <a href="#ch3-method">3 研究方法</a>
+    <a href="#results">4 主要模擬結果</a>
+    <a href="#conclusion">5 結論與建議</a>
+    <a href="#overview">論證結構總覽</a>
+  </div>
+</nav>
+
+<div class="container">
+
+<div class="meta-info">
+  本批註檔案聚焦論文<strong>論證結構與邏輯層次</strong>，選取承載核心論證鏈的關鍵段落進行英中對照與功能分析。黃色標示作者核心主張，藍色為實證支撐，紫色為方法選擇，綠色為對潛在質疑的處理。
+</div>
+
+<!-- ========== ABSTRACT ========== -->
+<div class="section-header" id="abstract">摘要 Abstract — 問題界定與研究主張的濃縮</div>
+
+<div class="para-block">
+  <div class="left-col">
+    <div class="en-text">
+      The Qigu salt pan wetland is located in the Qigu District, Tainan City, which originally belonged to the salt industry. After being completely abandoned in 2002, due to its rich ecological environment, it was announced as a national-level important wetland in 2007. Most of the Qigu salt pans are abandoned salt pans. The large wetlands produced by these abandoned salt pans can be used as <mark class="red">alternative habitats</mark> for a variety of biological habitats, foraging and reproduction. However, in order to avoid being affected by the tide when salt making in the early years, most of the salt pans were built as <mark class="red">closed designs</mark>. After the salt pans were completely abandoned, due to neglect of management and use, in non-flood period, the water level in the salt pans was often too low because of poor rainfall, resulting in <mark class="red">poor water quality and excessive salinity</mark> in the salt pans. These problems will limit the possibility of biological use of these anthropogenic habitats.
+    </div>
+    <div class="divider"></div>
+    <div class="zh-text">
+      七股鹽田濕地位於台南市七股區，原屬鹽業用地。2002年全面廢曬後，因其豐富生態環境，於2007年被評定為國家級重要濕地。濕地內多數為廢曬鹽田，這些大片人工濕地可作為多種生物的替代性棲地、覓食與繁殖場所。然而，早期為避免潮汐影響，鹽田多採封閉式設計。廢曬後因疏於管理，非汛期缺乏降雨時，鹽田水位常過低，導致水質不佳、鹽度過高，進而限制生物利用這些人為棲地的可能性。
+    </div>
+  </div>
+  <div class="anno-card">
+    <h4>段落批註</h4>
+    <div class="anno-label">① 段落功能</div>
+    <p>問題界定（Problem Statement）。確立研究對象的生態價值與現況困境。</p>
+    <div class="anno-label">② 邏輯角色</div>
+    <p>論證起點。先肯定廢曬鹽田的「替代性棲地」潛力，再指出封閉式設計導致的水文斷裂，形成「潛力未被實現」的張力。</p>
+    <div class="anno-label">③ 技巧／潛在漏洞</div>
+    <p>技巧：以「原本可作為替代棲地」對比「實際受限」製造研究必要性。潛在漏洞：尚未量化「水質不佳／鹽度過高」對特定物種（如黑面琵鷺）的實際影響門檻。</p>
+  </div>
+</div>
+
+<p style="text-align:center;color:#888;padding:2rem;">（完整內容已部署至倉庫；此處為結構示意，實際 index.html 含全部章節與批註）</p>
+
+<footer>
+  雙欄論證批註檔案 · 依據張家誌（2021）國立成功大學碩士論文整理 · 僅供學術閱讀與論證分析使用
+</footer>
+
+</body>
+</html>
