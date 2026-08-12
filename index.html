@@ -27,21 +27,24 @@ body{font-family:'IBM Plex Sans',system-ui,sans-serif;background:#e8e4dc;color:#
 .fig img{max-width:100%;height:auto;border-radius:3px;box-shadow:0 2px 6px rgba(0,0,0,.1)}
 .cap{font-size:.84rem;color:var(--muted);margin-top:.55rem}
 footer{text-align:center;padding:1.8rem;font-size:.78rem;color:#888}
+.preview-note{font-size:.82rem;color:#666;background:#f0f4f8;padding:.6rem 1rem;border-radius:4px;margin:1rem 0}
 </style>
 <script src="flowchart.js"></script>
 <script src="studyarea.js"></script>
 <script src="boundary.js"></script>
 <script src="facilities.js"></script>
+<script src="result74.js"></script>
+<script src="result79.js"></script>
 </head>
 <body>
 <div class="nav"><h1>應用地文性淹排水模式提升鹽田濕地之棲地品質—以七股鹽田濕地為例
 <span>國立成功大學 · 張家誌（2021）· 雙語全文（第1–3章）· 含原文頁面截圖</span></h1></div>
 <div class="cnav">
 <a href="#c1">第1章</a><a href="#c2">第2章</a><a href="#c2-1">2.1</a><a href="#c2-2">2.2</a><a href="#c2-3">2.3</a><a href="#c2-4">2.4</a>
-<a href="#c3">第3章</a><a href="#c3-1">3.1</a><a href="#c3-2">3.2</a>
+<a href="#c3">第3章</a><a href="#c3-1">3.1</a><a href="#c3-2">3.2</a><a href="#preview">更多截圖</a>
 </div>
 <div class="wrap">
-<div class="meta">本頁為<strong>分章逐步全文翻譯</strong>（第1–3章英中對照），並正式嵌入原文頁面截圖：研究流程圖、研究區、邊界、設施。</div>
+<div class="meta">本頁為<strong>分章逐步全文翻譯</strong>（第1–3章英中對照），並正式嵌入原文頁面截圖：研究流程圖、研究區、邊界、設施，以及部分模擬結果頁面預覽。</div>
 
 <div class="h" id="c1">Chapter 1 Introduction　第1章 緒論</div>
 <div class="sh">1.1 Background　背景</div>
@@ -75,13 +78,25 @@ footer{text-align:center;padding:1.8rem;font-size:.78rem;color:#888}
 
 <div class="fig"><img id="img-facilities" alt="Fig 3.10"><div class="cap">圖 3.10 研究區內設施（原文頁面截圖） / Figure 3.10 The facilities in study area</div></div>
 
+<div class="h" id="preview">更多原文截圖預覽（第4章模擬結果頁面）</div>
+<div class="preview-note">以下為論文第4章「結果與討論」中的原文頁面截圖預覽，待完整翻譯後會整合進對應章節。目前先正式嵌入，方便對照原文圖表。</div>
+<div class="fig"><img id="img-result74" alt="Result p74"><div class="cap">原文第74頁 · 模擬結果圖表示例 / Original page 74 – simulation result figure</div></div>
+<div class="fig"><img id="img-result79" alt="Result p79"><div class="cap">原文第79頁 · 模擬結果圖表示例 / Original page 79 – simulation result figure</div></div>
+
 </div>
 <footer>雙語全文（第1–3章）· 張家誌（2021）· 含原文頁面截圖<br>
-下一階段：第4章 · <a href="https://github.com/cheng9487/gay" style="color:#666">GitHub</a></footer>
+下一階段：第4章完整翻譯 · <a href="https://github.com/cheng9487/gay" style="color:#666">GitHub</a></footer>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   if (window.THESIS_IMGS) {
-    var m = { "img-flowchart": "flowchart", "img-studyarea": "studyarea", "img-boundary": "boundary", "img-facilities": "facilities" };
+    var m = {
+      "img-flowchart": "flowchart",
+      "img-studyarea": "studyarea",
+      "img-boundary": "boundary",
+      "img-facilities": "facilities",
+      "img-result74": "result74",
+      "img-result79": "result79"
+    };
     Object.keys(m).forEach(function(id) {
       var el = document.getElementById(id);
       if (el && THESIS_IMGS[m[id]]) el.src = THESIS_IMGS[m[id]];
